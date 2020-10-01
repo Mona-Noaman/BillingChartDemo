@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ChartHeaderView" customModule="VFGMVA10Billing">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44u-Pt-YaI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My bills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rX-VU-jud">
+                            <rect key="frame" x="133.5" y="44" width="53.5" height="21"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBi-yp-ihv">
+                            <rect key="frame" x="280" y="41" width="24" height="24"/>
+                            <state key="normal" image="icClose"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TBi-yp-ihv" secondAttribute="bottom" id="CdD-0Z-njD"/>
+                        <constraint firstAttribute="bottom" secondItem="5rX-VU-jud" secondAttribute="bottom" id="fCc-iN-G4D"/>
+                        <constraint firstItem="5rX-VU-jud" firstAttribute="centerX" secondItem="44u-Pt-YaI" secondAttribute="centerX" id="wS5-EI-sgY"/>
+                        <constraint firstAttribute="trailing" secondItem="TBi-yp-ihv" secondAttribute="trailing" constant="16" id="wgP-GT-1WR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="44u-Pt-YaI" secondAttribute="bottom" id="5AZ-Ol-7Zd"/>
+                <constraint firstItem="44u-Pt-YaI" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Bpv-Ox-aHa"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="44u-Pt-YaI" secondAttribute="trailing" id="Cm2-II-3G1"/>
+                <constraint firstItem="44u-Pt-YaI" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="I1j-Gw-4kb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="closeButton" destination="TBi-yp-ihv" id="USJ-GY-sSf"/>
+                <outlet property="titleLabel" destination="5rX-VU-jud" id="uDX-nE-f5g"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="105"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icClose" width="24" height="24"/>
+    </resources>
+</document>

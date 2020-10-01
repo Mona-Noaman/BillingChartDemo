@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="GUX-1J-8LS">
+            <objects>
+                <viewController storyboardIdentifier="VFGTutorialViewController" id="CHk-nB-LRA" customClass="VFGTutorialViewController" customModule="VFGFoundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nwO-BW-Yq3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywv-qx-iSy" customClass="VFGButton" customModule="VFGFoundation">
+                                <rect key="frame" x="16" y="725" width="382" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="H37-jb-9aq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButton:" destination="CHk-nB-LRA" eventType="touchUpInside" id="aL8-hn-CQa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIL-2c-mL8" customClass="VFGButton" customModule="VFGFoundation">
+                                <rect key="frame" x="16" y="783" width="382" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="cFd-PS-9Be"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButton:" destination="CHk-nB-LRA" eventType="touchUpInside" id="EdN-1f-S6f"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npl-86-e2S" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="44" width="414" height="464"/>
+                                <color key="backgroundColor" name="VFGWhiteBackgroundTwo"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Aud-zz-3OB">
+                                <rect key="frame" x="187.5" y="677" width="39" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="Xr5-V6-oJ5"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" name="VFGPageControlTint"/>
+                                <color key="currentPageIndicatorTintColor" name="VFGPageControlCurrentPage"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipZ-xC-Bmn">
+                                <rect key="frame" x="0.0" y="508" width="414" height="152"/>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="kka-BM-tEt"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2HA-mu-xoi">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CHk-nB-LRA" id="s9G-fH-nwP"/>
+                                    <outlet property="delegate" destination="CHk-nB-LRA" id="bYP-0p-gfr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="U7q-P5-ZPd" firstAttribute="trailing" secondItem="npl-86-e2S" secondAttribute="trailing" id="AMZ-Cl-uby"/>
+                            <constraint firstItem="ywv-qx-iSy" firstAttribute="top" secondItem="Aud-zz-3OB" secondAttribute="bottom" constant="40" id="FMd-NG-Ufj"/>
+                            <constraint firstItem="npl-86-e2S" firstAttribute="leading" secondItem="U7q-P5-ZPd" secondAttribute="leading" id="KgD-uK-uYU"/>
+                            <constraint firstItem="IIL-2c-mL8" firstAttribute="top" secondItem="ywv-qx-iSy" secondAttribute="bottom" constant="12" id="LAV-mX-RmZ"/>
+                            <constraint firstItem="ipZ-xC-Bmn" firstAttribute="top" secondItem="npl-86-e2S" secondAttribute="bottom" id="Nr3-jh-k7K"/>
+                            <constraint firstItem="U7q-P5-ZPd" firstAttribute="trailing" secondItem="IIL-2c-mL8" secondAttribute="trailing" constant="16" id="RZb-BU-dRh"/>
+                            <constraint firstItem="U7q-P5-ZPd" firstAttribute="bottom" secondItem="IIL-2c-mL8" secondAttribute="bottom" constant="33" id="RuU-ca-Bye"/>
+                            <constraint firstItem="ipZ-xC-Bmn" firstAttribute="leading" secondItem="U7q-P5-ZPd" secondAttribute="leading" id="WQm-Sj-25R"/>
+                            <constraint firstItem="U7q-P5-ZPd" firstAttribute="trailing" secondItem="ipZ-xC-Bmn" secondAttribute="trailing" id="XeS-Y1-v1v"/>
+                            <constraint firstItem="npl-86-e2S" firstAttribute="top" secondItem="U7q-P5-ZPd" secondAttribute="top" id="a18-Nw-tdG"/>
+                            <constraint firstItem="ywv-qx-iSy" firstAttribute="leading" secondItem="IIL-2c-mL8" secondAttribute="leading" id="ahg-d3-eCj"/>
+                            <constraint firstItem="ywv-qx-iSy" firstAttribute="top" secondItem="ipZ-xC-Bmn" secondAttribute="bottom" constant="65" id="al6-s0-Om3"/>
+                            <constraint firstItem="Aud-zz-3OB" firstAttribute="centerX" secondItem="ipZ-xC-Bmn" secondAttribute="centerX" id="dpN-vY-f5d"/>
+                            <constraint firstItem="IIL-2c-mL8" firstAttribute="leading" secondItem="U7q-P5-ZPd" secondAttribute="leading" constant="16" id="j2y-96-deO"/>
+                            <constraint firstItem="ywv-qx-iSy" firstAttribute="trailing" secondItem="IIL-2c-mL8" secondAttribute="trailing" id="qjr-72-TCa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U7q-P5-ZPd"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="npl-86-e2S" id="rgZ-U9-ceP"/>
+                        <outlet property="collectionView" destination="ipZ-xC-Bmn" id="0cX-fh-51c"/>
+                        <outlet property="loginButton" destination="ywv-qx-iSy" id="foQ-lR-Clu"/>
+                        <outlet property="pageControl" destination="Aud-zz-3OB" id="OGD-i7-R4F"/>
+                        <outlet property="registerButton" destination="IIL-2c-mL8" id="QIB-nQ-R45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtq-iz-iaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="-553"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="VFGPageControlCurrentPage">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPageControlTint">
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackgroundTwo">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

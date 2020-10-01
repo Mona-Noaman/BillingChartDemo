@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-BillGraphDemo/Pods-BillGraphDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/VFGFoundation/VFGFoundation.framework
+${BUILT_PRODUCTS_DIR}/VFGMVA10Billing/VFGMVA10Billing.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

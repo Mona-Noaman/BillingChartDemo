@@ -1,0 +1,6 @@
+framework module VFGMVA10Billing {
+  umbrella header "VFGMVA10Billing-umbrella.h"
+
+  export *
+  module * { export * }
+}

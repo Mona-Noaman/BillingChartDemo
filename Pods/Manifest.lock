@@ -1,0 +1,30 @@
+PODS:
+  - lottie-ios (3.1.8)
+  - VFGFoundation (1.12.1):
+    - VFGFoundation/VFGMVA10Splash (= 1.12.1)
+    - VFGFoundation/VFGTOBI (= 1.12.1)
+  - VFGFoundation/VFGMVA10Splash (1.12.1):
+    - lottie-ios
+  - VFGFoundation/VFGTOBI (1.12.1):
+    - lottie-ios
+  - VFGMVA10Billing (1.4.5):
+    - VFGFoundation
+
+DEPENDENCIES:
+  - VFGMVA10Billing (= 1.4.5)
+
+SPEC REPOS:
+  "https://df84987aaacb902dbb7582e79ce5cd60195bd13c@github.vodafone.com/TSS-MyVodafone-CoreApp/iOS-Stage-CocoaPods-5.2.git":
+    - VFGFoundation
+    - VFGMVA10Billing
+  trunk:
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  VFGFoundation: 97e0f8523295deb7270d4b1e60639b8a1b3f5cd4
+  VFGMVA10Billing: d8f6f95475d7b059b31a4a6ec33c1f6b8aa043b2
+
+PODFILE CHECKSUM: f96ae725465765e6c9edb54d6e8185a3d8b279fe
+
+COCOAPODS: 1.8.4

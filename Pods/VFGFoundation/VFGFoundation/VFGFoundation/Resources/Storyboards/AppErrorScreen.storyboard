@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--App Error Screen View Controller-->
+        <scene sceneID="sFw-JB-Ybn">
+            <objects>
+                <viewController storyboardIdentifier="AppErrorScreenViewController" id="5Qt-fr-R73" customClass="AppErrorScreenViewController" customModule="VFGFoundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zgb-NL-07K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWarningHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-Au-cft">
+                                <rect key="frame" x="144.5" y="204" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="3XA-jz-pWH"/>
+                                    <constraint firstAttribute="width" constant="125" id="npm-zp-qeI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error has occurred" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li0-7U-3ZA">
+                                <rect key="frame" x="16" y="362" width="382" height="35"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="30"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUP-6J-wui">
+                                <rect key="frame" x="16" y="407" width="382" height="59.5"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPV-VR-Iwa" customClass="VFGButton" customModule="VFGFoundation" customModuleProvider="target">
+                                <rect key="frame" x="15" y="770" width="384" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="DbG-nK-q38"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                                <state key="normal" title="Retry">
+                                    <color key="titleColor" name="VFGPrimaryButtonText"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonActionPressed:" destination="5Qt-fr-R73" eventType="touchUpInside" id="BfA-Eq-a9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="tUP-6J-wui" firstAttribute="centerX" secondItem="Zgb-NL-07K" secondAttribute="centerX" id="E8T-BH-4Ev"/>
+                            <constraint firstItem="OP5-Au-cft" firstAttribute="top" secondItem="UOi-zh-34p" secondAttribute="top" constant="160" id="Jk5-a2-HLq"/>
+                            <constraint firstItem="UOi-zh-34p" firstAttribute="bottom" secondItem="aPV-VR-Iwa" secondAttribute="bottom" constant="46" id="LYV-kO-ra1"/>
+                            <constraint firstItem="tUP-6J-wui" firstAttribute="top" secondItem="li0-7U-3ZA" secondAttribute="bottom" constant="10" id="SaL-Hu-HNM"/>
+                            <constraint firstItem="li0-7U-3ZA" firstAttribute="top" secondItem="OP5-Au-cft" secondAttribute="bottom" constant="33" id="Vhp-A3-9LV"/>
+                            <constraint firstItem="li0-7U-3ZA" firstAttribute="leading" secondItem="Zgb-NL-07K" secondAttribute="leading" constant="16" id="ViH-Z5-ORJ"/>
+                            <constraint firstItem="aPV-VR-Iwa" firstAttribute="leading" secondItem="Zgb-NL-07K" secondAttribute="leading" constant="15" id="Waf-Oa-khe"/>
+                            <constraint firstItem="tUP-6J-wui" firstAttribute="leading" secondItem="Zgb-NL-07K" secondAttribute="leading" constant="16" id="Wxg-Qv-Ywx"/>
+                            <constraint firstItem="li0-7U-3ZA" firstAttribute="centerX" secondItem="Zgb-NL-07K" secondAttribute="centerX" id="aFs-S9-fnA"/>
+                            <constraint firstAttribute="trailing" secondItem="aPV-VR-Iwa" secondAttribute="trailing" constant="15" id="aQt-Oz-20M"/>
+                            <constraint firstAttribute="trailing" secondItem="tUP-6J-wui" secondAttribute="trailing" constant="16" id="dxd-qc-wOy"/>
+                            <constraint firstAttribute="trailing" secondItem="li0-7U-3ZA" secondAttribute="trailing" constant="16" id="rIw-be-k0e"/>
+                            <constraint firstItem="OP5-Au-cft" firstAttribute="centerX" secondItem="Zgb-NL-07K" secondAttribute="centerX" id="u8s-6I-zTB"/>
+                            <constraint firstItem="aPV-VR-Iwa" firstAttribute="centerX" secondItem="UOi-zh-34p" secondAttribute="centerX" id="yTU-F9-8oO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UOi-zh-34p"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAction" destination="aPV-VR-Iwa" id="Nzg-Fg-YCj"/>
+                        <outlet property="errorImageView" destination="OP5-Au-cft" id="abg-aw-cxV"/>
+                        <outlet property="errorMessage" destination="tUP-6J-wui" id="k89-ZO-hXg"/>
+                        <outlet property="errorTitle" destination="li0-7U-3ZA" id="GiJ-70-iV7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xW-23-HmH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="-206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icWarningHiLightTheme" width="125" height="125"/>
+        <namedColor name="VFGPrimaryButtonText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChartShimmerCell" id="gTV-IL-0wX" customClass="ChartShimmerCell" customModule="VFGMVA10Billing">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="44" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Nh-Ky-gA4" customClass="ShimmerView" customModule="VFGFoundation">
+                        <rect key="frame" x="18" y="32" width="8" height="69"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8.3000000000000007" id="VJL-1y-jxV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MZ-V5-dqL">
+                        <rect key="frame" x="0.0" y="120" width="44" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8R-Rl-fyj">
+                                <rect key="frame" x="0.0" y="8" width="44" height="1"/>
+                                <color key="backgroundColor" name="VFGGreyDividerFour"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="McP-ri-dr7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Q5B-nW-2cG"/>
+                            <constraint firstItem="I8R-Rl-fyj" firstAttribute="top" secondItem="2MZ-V5-dqL" secondAttribute="top" constant="8" id="Txr-2l-4bI"/>
+                            <constraint firstItem="I8R-Rl-fyj" firstAttribute="leading" secondItem="2MZ-V5-dqL" secondAttribute="leading" id="jzH-sr-zLM"/>
+                            <constraint firstAttribute="trailing" secondItem="I8R-Rl-fyj" secondAttribute="trailing" id="oFX-2E-Znm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2Nh-Ky-gA4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="01h-id-n6W"/>
+                <constraint firstItem="2Nh-Ky-gA4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="32" id="1Nb-RG-PqG"/>
+                <constraint firstItem="2MZ-V5-dqL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OuZ-Tp-i3H"/>
+                <constraint firstItem="2MZ-V5-dqL" firstAttribute="top" secondItem="2Nh-Ky-gA4" secondAttribute="bottom" constant="19" id="TpK-2O-P54"/>
+                <constraint firstAttribute="bottom" secondItem="2MZ-V5-dqL" secondAttribute="bottom" id="jd5-Tk-pEL"/>
+                <constraint firstAttribute="trailing" secondItem="2MZ-V5-dqL" secondAttribute="trailing" id="lEH-KV-ls7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="shimmerView" destination="2Nh-Ky-gA4" id="zkD-1Z-4LF"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyDividerFour">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

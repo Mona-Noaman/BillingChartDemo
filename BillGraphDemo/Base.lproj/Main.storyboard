@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BillGraphDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V27-I2-7wd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bze-HN-pVd">
+                                        <rect key="frame" x="20" y="20" width="377.5" height="857.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2a-os-PHe">
+                                                <rect key="frame" x="0.0" y="0.0" width="377.5" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="BuK-sK-dLZ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="J2a-os-PHe" secondAttribute="trailing" id="8pz-Un-A1a">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                            </constraint>
+                                            <constraint firstItem="J2a-os-PHe" firstAttribute="leading" secondItem="Bze-HN-pVd" secondAttribute="leading" id="SGR-P6-LEB">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                            </constraint>
+                                            <constraint firstItem="J2a-os-PHe" firstAttribute="top" secondItem="Bze-HN-pVd" secondAttribute="top" id="mpg-Ns-lr8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Bze-HN-pVd" secondAttribute="trailing" constant="20" id="56y-X1-E4p"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bze-HN-pVd" secondAttribute="bottom" constant="20" id="Kqs-Y5-LL8"/>
+                                    <constraint firstItem="Bze-HN-pVd" firstAttribute="leading" secondItem="V27-I2-7wd" secondAttribute="leading" constant="20" id="KxR-RY-Vct"/>
+                                    <constraint firstItem="Bze-HN-pVd" firstAttribute="top" secondItem="V27-I2-7wd" secondAttribute="top" constant="20" id="h4x-mE-vYq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Ewl-KE-tnA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="D4S-oN-p12"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bze-HN-pVd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.911836" id="3ME-I3-1lc"/>
+                            <constraint firstItem="V27-I2-7wd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="51l-On-hj7"/>
+                            <constraint firstItem="V27-I2-7wd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6dR-Xs-DF7"/>
+                            <constraint firstAttribute="bottom" secondItem="V27-I2-7wd" secondAttribute="bottom" id="WvX-Q5-HCi"/>
+                            <constraint firstAttribute="trailing" secondItem="V27-I2-7wd" secondAttribute="trailing" id="eno-fm-b99"/>
+                            <constraint firstItem="Bze-HN-pVd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.957031" priority="250" id="owN-9U-Y0V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerView" destination="J2a-os-PHe" id="R4y-U6-NC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="90"/>
+        </scene>
+    </scenes>
+</document>

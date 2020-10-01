@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BillPageSectionHeaderView" customModule="VFGMVA10Billing">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0X-HW-XSI">
+                    <rect key="frame" x="16" y="16" width="382" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Breakdown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-6W-Vo8" customClass="VFGLabel" customModule="VFGFoundation">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cu3-Y2-fG1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                            <color key="textColor" name="VFGDarkGreyTwoHeader"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="X4F-6W-Vo8" firstAttribute="leading" secondItem="r0X-HW-XSI" secondAttribute="leading" id="CIe-3x-p7w"/>
+                        <constraint firstItem="X4F-6W-Vo8" firstAttribute="top" secondItem="r0X-HW-XSI" secondAttribute="top" id="Z3p-3R-Ugp"/>
+                        <constraint firstAttribute="bottom" secondItem="X4F-6W-Vo8" secondAttribute="bottom" id="cHm-MC-hs8"/>
+                        <constraint firstAttribute="trailing" secondItem="X4F-6W-Vo8" secondAttribute="trailing" id="dCr-n1-Zwa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="r0X-HW-XSI" secondAttribute="bottom" constant="16" id="B0v-IJ-FoK"/>
+                <constraint firstItem="r0X-HW-XSI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Kjf-0a-VYh"/>
+                <constraint firstItem="r0X-HW-XSI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="fvD-sL-DWU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="r0X-HW-XSI" secondAttribute="trailing" constant="16" id="gXZ-PP-GCL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="labelTitle" destination="X4F-6W-Vo8" id="7ZU-mD-LyH"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="-73.995535714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGDarkGreyTwoHeader">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

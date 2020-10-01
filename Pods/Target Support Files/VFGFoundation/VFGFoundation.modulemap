@@ -1,0 +1,6 @@
+framework module VFGFoundation {
+  umbrella header "VFGFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

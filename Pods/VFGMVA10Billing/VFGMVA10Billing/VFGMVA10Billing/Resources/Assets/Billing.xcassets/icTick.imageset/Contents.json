@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "icTick.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "scale" : "2x",
+      "idiom" : "universal",
+      "filename" : "icTick@2x.png"
+    },
+    {
+      "filename" : "icTick@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

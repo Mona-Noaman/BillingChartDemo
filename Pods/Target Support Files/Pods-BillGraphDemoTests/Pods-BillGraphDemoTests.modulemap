@@ -1,0 +1,6 @@
+framework module Pods_BillGraphDemoTests {
+  umbrella header "Pods-BillGraphDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

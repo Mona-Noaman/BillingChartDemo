@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UUz-Mh-oTY" userLabel="DashboardBillingCard" customClass="DashboardBillingCard" customModule="VFGMVA10Billing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBillReportGenericTariffPlan" translatesAutoresizingMaskIntoConstraints="NO" id="9P2-AW-T0b">
+                    <rect key="frame" x="12" y="12" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="V33-92-DSb"/>
+                        <constraint firstAttribute="height" constant="24" id="wUJ-pn-3WH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" text="Your current spend is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E6-Ls-yfb" userLabel="Description Label">
+                    <rect key="frame" x="12" y="44" width="149" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="fuz-th-pk4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7k-p9-irM">
+                    <rect key="frame" x="44" y="14.5" width="113" height="19"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hko-AV-BBK" userLabel="Spending Label">
+                    <rect key="frame" x="12" y="98" width="149" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="0kM-XD-Hfl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="42"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ct-7I-nC2" userLabel="PayDate Label">
+                    <rect key="frame" x="12" y="147" width="149" height="0.0"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="15"/>
+                    <color key="textColor" name="VFGSecondaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icClockMid" translatesAutoresizingMaskIntoConstraints="NO" id="cXP-AY-oGT">
+                    <rect key="frame" x="57" y="50" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="gIn-YI-iXK"/>
+                        <constraint firstAttribute="height" constant="55" id="jpD-93-GpM"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c75-5h-89m">
+                    <rect key="frame" x="12" y="117" width="149" height="36"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="15"/>
+                    <color key="textColor" name="VFGSecondaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="VFGWhiteBackground"/>
+            <constraints>
+                <constraint firstItem="hIl-yj-lsM" firstAttribute="trailing" secondItem="c75-5h-89m" secondAttribute="trailing" constant="8" id="39O-2n-Acc"/>
+                <constraint firstItem="hko-AV-BBK" firstAttribute="leading" secondItem="9P2-AW-T0b" secondAttribute="leading" id="6hw-vH-2o3"/>
+                <constraint firstItem="c75-5h-89m" firstAttribute="top" secondItem="cXP-AY-oGT" secondAttribute="bottom" constant="12" id="9Sn-jp-TLR"/>
+                <constraint firstItem="hko-AV-BBK" firstAttribute="trailing" secondItem="3E6-Ls-yfb" secondAttribute="trailing" id="Cny-1o-D5l"/>
+                <constraint firstItem="5Ct-7I-nC2" firstAttribute="top" secondItem="hko-AV-BBK" secondAttribute="bottom" constant="8" id="G2c-d3-Yc1"/>
+                <constraint firstItem="cXP-AY-oGT" firstAttribute="centerX" secondItem="hIl-yj-lsM" secondAttribute="centerX" id="IrA-nE-Gik"/>
+                <constraint firstItem="3E6-Ls-yfb" firstAttribute="leading" secondItem="9P2-AW-T0b" secondAttribute="leading" id="Jt0-bN-YAh"/>
+                <constraint firstItem="c75-5h-89m" firstAttribute="leading" secondItem="9P2-AW-T0b" secondAttribute="leading" id="K38-2d-Tjh"/>
+                <constraint firstItem="9P2-AW-T0b" firstAttribute="leading" secondItem="5Ct-7I-nC2" secondAttribute="leading" id="KbO-1N-wQu"/>
+                <constraint firstItem="Q7k-p9-irM" firstAttribute="centerY" secondItem="9P2-AW-T0b" secondAttribute="centerY" id="Ox4-Pz-TZZ"/>
+                <constraint firstItem="hIl-yj-lsM" firstAttribute="trailing" secondItem="3E6-Ls-yfb" secondAttribute="trailing" constant="8" id="aqD-cD-tc2"/>
+                <constraint firstItem="3E6-Ls-yfb" firstAttribute="top" secondItem="9P2-AW-T0b" secondAttribute="bottom" constant="8" id="dbF-dV-Jlw"/>
+                <constraint firstItem="Q7k-p9-irM" firstAttribute="leading" secondItem="9P2-AW-T0b" secondAttribute="trailing" constant="8" id="en8-s5-soX"/>
+                <constraint firstItem="5Ct-7I-nC2" firstAttribute="leading" secondItem="hIl-yj-lsM" secondAttribute="leading" constant="12" id="gej-Es-xBX"/>
+                <constraint firstItem="hIl-yj-lsM" firstAttribute="bottom" secondItem="c75-5h-89m" secondAttribute="bottom" constant="6" id="iOe-bR-yOy"/>
+                <constraint firstItem="hIl-yj-lsM" firstAttribute="bottom" secondItem="5Ct-7I-nC2" secondAttribute="bottom" constant="12" id="kRg-yJ-gPW"/>
+                <constraint firstItem="c75-5h-89m" firstAttribute="leading" secondItem="hIl-yj-lsM" secondAttribute="leading" constant="12" id="klq-L6-qr8"/>
+                <constraint firstAttribute="trailing" secondItem="Q7k-p9-irM" secondAttribute="trailing" constant="12" id="nXX-Tx-EQ7"/>
+                <constraint firstItem="9P2-AW-T0b" firstAttribute="top" secondItem="UUz-Mh-oTY" secondAttribute="top" constant="12" id="s8C-Jr-Pid"/>
+                <constraint firstItem="5Ct-7I-nC2" firstAttribute="trailing" secondItem="3E6-Ls-yfb" secondAttribute="trailing" id="v5S-jA-uMP"/>
+                <constraint firstItem="cXP-AY-oGT" firstAttribute="top" secondItem="9P2-AW-T0b" secondAttribute="bottom" constant="14" id="vNl-Y6-agP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hIl-yj-lsM"/>
+            <connections>
+                <outlet property="descriptionIcon" destination="cXP-AY-oGT" id="J60-UG-OLh"/>
+                <outlet property="descriptionLabel" destination="3E6-Ls-yfb" id="lZw-P1-lN0"/>
+                <outlet property="iconImageView" destination="9P2-AW-T0b" id="sBa-Hf-jUK"/>
+                <outlet property="labelPayDate" destination="5Ct-7I-nC2" id="aNt-GD-Kbh"/>
+                <outlet property="labelSpending" destination="hko-AV-BBK" id="6dk-pE-6ZI"/>
+                <outlet property="noBillDate" destination="c75-5h-89m" id="3vd-o4-HHw"/>
+                <outlet property="titleLabel" destination="Q7k-p9-irM" id="xPD-QM-ChQ"/>
+            </connections>
+            <point key="canvasLocation" x="-48.550724637681164" y="-509.93303571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBillReportGenericTariffPlan" width="32" height="32"/>
+        <image name="icClockMid" width="50" height="50"/>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

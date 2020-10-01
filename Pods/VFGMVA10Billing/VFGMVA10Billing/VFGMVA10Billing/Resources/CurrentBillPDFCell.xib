@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrentBillPDFCell" id="pdr-lD-tIG" customClass="CurrentBillPDFCell" customModule="VFGMVA10Billing">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="404"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="404"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pCX-T0-S1k">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="404"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-4v-dJS">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="138"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uP-K9-tWM" userLabel="yearLabel">
+                                        <rect key="frame" x="16" y="16" width="36" height="19"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUO-5W-Wm3" userLabel="valueLabel">
+                                        <rect key="frame" x="16" y="75" width="93.5" height="47.5"/>
+                                        <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="42"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="November" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcu-6h-1mz" userLabel="monthLabel">
+                                        <rect key="frame" x="16" y="43" width="112" height="28"/>
+                                        <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="24"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstItem="4uP-K9-tWM" firstAttribute="leading" secondItem="eTe-4v-dJS" secondAttribute="leading" constant="16" id="6zf-Kp-Xuv"/>
+                                    <constraint firstItem="lcu-6h-1mz" firstAttribute="top" secondItem="4uP-K9-tWM" secondAttribute="bottom" constant="8" id="CM1-I2-aLO"/>
+                                    <constraint firstAttribute="height" constant="138" id="Gic-xd-xGc"/>
+                                    <constraint firstItem="lcu-6h-1mz" firstAttribute="leading" secondItem="eTe-4v-dJS" secondAttribute="leading" constant="16" id="XGs-re-Ajs"/>
+                                    <constraint firstItem="4uP-K9-tWM" firstAttribute="top" secondItem="eTe-4v-dJS" secondAttribute="top" constant="16" id="guO-9g-LHw"/>
+                                    <constraint firstItem="RUO-5W-Wm3" firstAttribute="leading" secondItem="eTe-4v-dJS" secondAttribute="leading" constant="16" id="jA1-4y-k9Z"/>
+                                    <constraint firstItem="RUO-5W-Wm3" firstAttribute="top" secondItem="lcu-6h-1mz" secondAttribute="bottom" constant="8" id="nVd-Wa-zFb"/>
+                                    <constraint firstAttribute="bottom" secondItem="RUO-5W-Wm3" secondAttribute="bottom" constant="15.5" id="tQW-53-NPl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8z-9L-smb">
+                                <rect key="frame" x="0.0" y="138" width="400" height="120.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeP-rl-zoo" userLabel="seperatorViewOne">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="1"/>
+                                        <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="T15-iR-OF3"/>
+                                            <constraint firstAttribute="height" constant="1" id="fr4-7U-fn6"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra charges included" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-cP-G1X" userLabel="extraChargesLabel">
+                                        <rect key="frame" x="16" y="17" width="164" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="C2C-r3-rjl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-7G-gZr">
+                                        <rect key="frame" x="16" y="52" width="368" height="52.5"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstItem="eeP-rl-zoo" firstAttribute="top" secondItem="V8z-9L-smb" secondAttribute="top" id="5lu-jG-F4E"/>
+                                    <constraint firstAttribute="bottom" secondItem="X6m-7G-gZr" secondAttribute="bottom" constant="16" id="Efb-Jo-60X"/>
+                                    <constraint firstAttribute="trailing" secondItem="eeP-rl-zoo" secondAttribute="trailing" id="ZWM-lA-Ods"/>
+                                    <constraint firstItem="yy6-cP-G1X" firstAttribute="leading" secondItem="V8z-9L-smb" secondAttribute="leading" constant="16" id="Zpf-PW-coM"/>
+                                    <constraint firstItem="X6m-7G-gZr" firstAttribute="leading" secondItem="V8z-9L-smb" secondAttribute="leading" constant="16" id="hBc-Ji-qSH"/>
+                                    <constraint firstItem="eeP-rl-zoo" firstAttribute="leading" secondItem="V8z-9L-smb" secondAttribute="leading" id="noM-cf-dvH"/>
+                                    <constraint firstItem="X6m-7G-gZr" firstAttribute="top" secondItem="yy6-cP-G1X" secondAttribute="bottom" constant="16" id="qHb-ea-oSS"/>
+                                    <constraint firstAttribute="trailing" secondItem="X6m-7G-gZr" secondAttribute="trailing" constant="16" id="qVV-Bd-lMP"/>
+                                    <constraint firstItem="yy6-cP-G1X" firstAttribute="top" secondItem="eeP-rl-zoo" secondAttribute="bottom" constant="16" id="uJX-hl-mS7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Dx-UT-m9m">
+                                <rect key="frame" x="0.0" y="258.5" width="400" height="145.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6N-Mk-Hbf" userLabel="seperatorViewOne">
+                                        <rect key="frame" x="16" y="0.0" width="368" height="1"/>
+                                        <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="14p-ur-hvG"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Jwr-hF-P80"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-zi-cTi">
+                                        <rect key="frame" x="16" y="9" width="368" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icInfoCircle" translatesAutoresizingMaskIntoConstraints="NO" id="0zq-tM-wK1">
+                                                <rect key="frame" x="0.0" y="8" width="33" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="33" id="V1M-0W-xfd"/>
+                                                    <constraint firstAttribute="height" constant="33" id="rZe-c5-OGv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ml-ym-scJ" userLabel="detailTitle">
+                                                <rect key="frame" x="41" y="14.5" width="52" height="20"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-RX-iro">
+                                                <rect key="frame" x="335" y="8" width="33" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="33" id="JDA-QE-cWm"/>
+                                                    <constraint firstAttribute="height" constant="33" id="Sjf-7M-g7Z"/>
+                                                </constraints>
+                                                <state key="normal" image="icChevronRightRed"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                        <constraints>
+                                            <constraint firstItem="0zq-tM-wK1" firstAttribute="leading" secondItem="xAq-zi-cTi" secondAttribute="leading" id="0Tn-w5-caH"/>
+                                            <constraint firstAttribute="height" constant="50" id="70v-Jf-K4L"/>
+                                            <constraint firstItem="0zq-tM-wK1" firstAttribute="centerY" secondItem="7ml-ym-scJ" secondAttribute="centerY" id="75T-RV-3R6"/>
+                                            <constraint firstItem="7ml-ym-scJ" firstAttribute="leading" secondItem="0zq-tM-wK1" secondAttribute="trailing" constant="8" id="9fr-65-ne3"/>
+                                            <constraint firstAttribute="bottom" secondItem="0zq-tM-wK1" secondAttribute="bottom" constant="9" id="B2X-WO-l8F"/>
+                                            <constraint firstAttribute="trailing" secondItem="NSp-RX-iro" secondAttribute="trailing" id="BNC-MY-rCW"/>
+                                            <constraint firstItem="0zq-tM-wK1" firstAttribute="top" secondItem="xAq-zi-cTi" secondAttribute="top" constant="8" id="O4w-4x-AG1"/>
+                                            <constraint firstItem="7ml-ym-scJ" firstAttribute="centerY" secondItem="NSp-RX-iro" secondAttribute="centerY" id="oiU-oE-AaO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLz-x2-FHi" userLabel="seperatorViewOne">
+                                        <rect key="frame" x="16" y="67" width="368" height="1"/>
+                                        <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="g8u-x1-iRF"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="nbF-pt-H49"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-B7-0uI">
+                                        <rect key="frame" x="16" y="76" width="368" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icInfoReports" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-bW-G2s">
+                                                <rect key="frame" x="0.0" y="8" width="33" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="33" id="6z6-52-Kz2"/>
+                                                    <constraint firstAttribute="height" constant="33" id="yyI-tb-EgJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6X-cH-IXt" userLabel="pdfTitle">
+                                                <rect key="frame" x="41" y="14.5" width="83" height="20"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFM-7e-pVM">
+                                                <rect key="frame" x="335" y="8" width="33" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="2Gp-Kh-8v7"/>
+                                                    <constraint firstAttribute="width" constant="33" id="IEU-GC-NUz"/>
+                                                </constraints>
+                                                <state key="normal" image="icChevronRightRed"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                        <constraints>
+                                            <constraint firstItem="M6X-cH-IXt" firstAttribute="leading" secondItem="k4H-bW-G2s" secondAttribute="trailing" constant="8" id="DrX-El-8OF"/>
+                                            <constraint firstAttribute="bottom" secondItem="k4H-bW-G2s" secondAttribute="bottom" constant="9" id="M4d-KI-H2j"/>
+                                            <constraint firstAttribute="trailing" secondItem="bFM-7e-pVM" secondAttribute="trailing" id="NJz-m2-iKl"/>
+                                            <constraint firstItem="M6X-cH-IXt" firstAttribute="centerY" secondItem="bFM-7e-pVM" secondAttribute="centerY" id="fBe-cc-UPU"/>
+                                            <constraint firstItem="k4H-bW-G2s" firstAttribute="leading" secondItem="8ya-B7-0uI" secondAttribute="leading" id="hSl-5q-WZZ"/>
+                                            <constraint firstItem="k4H-bW-G2s" firstAttribute="top" secondItem="8ya-B7-0uI" secondAttribute="top" constant="8" id="iQ8-Jy-bHV"/>
+                                            <constraint firstItem="k4H-bW-G2s" firstAttribute="centerY" secondItem="M6X-cH-IXt" secondAttribute="centerY" id="kDS-yH-oGE"/>
+                                            <constraint firstAttribute="height" constant="50" id="yBd-xs-X8H"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstItem="8ya-B7-0uI" firstAttribute="leading" secondItem="0Dx-UT-m9m" secondAttribute="leading" constant="16" id="2kS-cn-ceH"/>
+                                    <constraint firstItem="8ya-B7-0uI" firstAttribute="top" secondItem="XLz-x2-FHi" secondAttribute="bottom" constant="8" id="7do-iQ-eIT"/>
+                                    <constraint firstAttribute="trailing" secondItem="XLz-x2-FHi" secondAttribute="trailing" constant="16" id="MgA-xO-RlO"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ya-B7-0uI" secondAttribute="trailing" constant="16" id="OAJ-fV-3Aq"/>
+                                    <constraint firstItem="G6N-Mk-Hbf" firstAttribute="top" secondItem="0Dx-UT-m9m" secondAttribute="top" id="OfX-eb-9Z1"/>
+                                    <constraint firstItem="G6N-Mk-Hbf" firstAttribute="leading" secondItem="0Dx-UT-m9m" secondAttribute="leading" constant="16" id="PUJ-Nk-lnq"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAq-zi-cTi" secondAttribute="trailing" constant="16" id="dV3-er-QHW"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ya-B7-0uI" secondAttribute="bottom" constant="19.5" id="fMp-lH-cWa"/>
+                                    <constraint firstAttribute="trailing" secondItem="G6N-Mk-Hbf" secondAttribute="trailing" constant="16" id="kNr-fd-GbF"/>
+                                    <constraint firstItem="XLz-x2-FHi" firstAttribute="leading" secondItem="0Dx-UT-m9m" secondAttribute="leading" constant="16" id="lyg-Up-M7w"/>
+                                    <constraint firstItem="xAq-zi-cTi" firstAttribute="top" secondItem="G6N-Mk-Hbf" secondAttribute="bottom" constant="8" id="sOt-tV-vyi"/>
+                                    <constraint firstItem="xAq-zi-cTi" firstAttribute="leading" secondItem="0Dx-UT-m9m" secondAttribute="leading" constant="16" id="uov-dE-inF"/>
+                                    <constraint firstItem="XLz-x2-FHi" firstAttribute="top" secondItem="xAq-zi-cTi" secondAttribute="bottom" constant="8" id="wLd-O0-PNQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pCX-T0-S1k" secondAttribute="trailing" id="20q-ie-gVF"/>
+                <constraint firstItem="pCX-T0-S1k" firstAttribute="leading" secondItem="pdr-lD-tIG" secondAttribute="leading" id="HA2-zJ-4i5"/>
+                <constraint firstItem="pCX-T0-S1k" firstAttribute="top" secondItem="pdr-lD-tIG" secondAttribute="top" id="c1r-X1-QPB"/>
+                <constraint firstAttribute="bottom" secondItem="pCX-T0-S1k" secondAttribute="bottom" id="xRU-dz-ZSE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="JvT-Pv-ANF"/>
+            <connections>
+                <outlet property="containerStackView" destination="pCX-T0-S1k" id="uJP-2J-H3D"/>
+                <outlet property="detailIconImageView" destination="0zq-tM-wK1" id="Ed5-gD-CMw"/>
+                <outlet property="detailTitle" destination="7ml-ym-scJ" id="XZC-tN-iIN"/>
+                <outlet property="detailView" destination="xAq-zi-cTi" id="ZbB-MF-Fbe"/>
+                <outlet property="extraChargesLabel" destination="yy6-cP-G1X" id="Lfi-XS-lLc"/>
+                <outlet property="monthLabel" destination="lcu-6h-1mz" id="dV9-6A-Q1n"/>
+                <outlet property="pdfIconImageView" destination="k4H-bW-G2s" id="c0Q-Z1-vnv"/>
+                <outlet property="pdfTitle" destination="M6X-cH-IXt" id="3ws-QG-Wfq"/>
+                <outlet property="pdfView" destination="8ya-B7-0uI" id="tuf-Wc-8T8"/>
+                <outlet property="seperatorViewOne" destination="eeP-rl-zoo" id="nGy-D9-VgM"/>
+                <outlet property="stackViewExtraCharges" destination="X6m-7G-gZr" id="7Op-Yk-BZb"/>
+                <outlet property="valueLabel" destination="RUO-5W-Wm3" id="LjT-lP-xS2"/>
+                <outlet property="yearLabel" destination="4uP-K9-tWM" id="g4L-ZT-FJb"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="63.616071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icChevronRightRed" width="30" height="30"/>
+        <image name="icInfoCircle" width="24" height="24"/>
+        <image name="icInfoReports" width="34" height="34"/>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

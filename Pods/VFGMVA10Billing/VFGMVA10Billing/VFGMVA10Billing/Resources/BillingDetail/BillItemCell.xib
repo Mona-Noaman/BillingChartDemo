@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BillItemCell" rowHeight="541" id="KGk-i7-Jjw" customClass="BillItemCell" customModule="VFGMVA10Billing">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="541"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="541"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-fG-HjO">
+                        <rect key="frame" x="16" y="0.0" width="343" height="489"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxt-ec-WqP">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="76"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2CA-D0-NTR">
+                                        <rect key="frame" x="16" y="22" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Fbc-xo-9NT"/>
+                                            <constraint firstAttribute="width" constant="32" id="t4E-L2-MZO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QOt-bt-fLt">
+                                        <rect key="frame" x="64" y="16" width="263" height="44.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vodafone One Family" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8p2-U1-Exm" customClass="VFGLabel" customModule="VFGFoundation">
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Bundle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-Xw-1W8" customClass="VFGLabel" customModule="VFGFoundation">
+                                                <rect key="frame" x="0.0" y="25.5" width="263" height="19"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRn-ee-dOa">
+                                        <rect key="frame" x="16" y="75" width="311" height="1"/>
+                                        <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="eTj-gs-bOc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QOt-bt-fLt" firstAttribute="leading" secondItem="2CA-D0-NTR" secondAttribute="trailing" constant="16" id="8uK-na-Ohn"/>
+                                    <constraint firstItem="lRn-ee-dOa" firstAttribute="leading" secondItem="Wxt-ec-WqP" secondAttribute="leading" constant="16" id="J6R-HU-xha"/>
+                                    <constraint firstAttribute="trailing" secondItem="lRn-ee-dOa" secondAttribute="trailing" constant="16" id="Kef-OO-bCv"/>
+                                    <constraint firstAttribute="bottom" secondItem="lRn-ee-dOa" secondAttribute="bottom" id="PwV-iM-ZYh"/>
+                                    <constraint firstAttribute="height" constant="76" id="W2U-ev-v1g"/>
+                                    <constraint firstItem="2CA-D0-NTR" firstAttribute="leading" secondItem="Wxt-ec-WqP" secondAttribute="leading" constant="16" id="ZKx-ke-sTv"/>
+                                    <constraint firstItem="2CA-D0-NTR" firstAttribute="centerY" secondItem="Wxt-ec-WqP" secondAttribute="centerY" id="lsU-4E-uoS"/>
+                                    <constraint firstAttribute="trailing" secondItem="QOt-bt-fLt" secondAttribute="trailing" constant="16" id="pgY-i8-mUw"/>
+                                    <constraint firstItem="QOt-bt-fLt" firstAttribute="centerY" secondItem="2CA-D0-NTR" secondAttribute="centerY" id="yNy-xK-CTq"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lvM-IH-SJA">
+                                <rect key="frame" x="16" y="92" width="311" height="334"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkq-Kt-VMO">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="REr-nD-hqU">
+                                                <rect key="frame" x="48" y="0.0" width="263" height="64"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tu2-qS-JCL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total to pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-Vv-jDB" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="27.90€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-xj-wQQ" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="136.5" y="0.0" width="126.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vp2-u3-dht">
+                                                        <rect key="frame" x="0.0" y="36" width="263" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of service cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85e-Ui-lGM" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="5€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcv-Zk-u32" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="125.5" y="0.0" width="137.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="REr-nD-hqU" secondAttribute="bottom" id="9Qa-Ai-yDP"/>
+                                            <constraint firstAttribute="trailing" secondItem="REr-nD-hqU" secondAttribute="trailing" id="DBE-kN-CD1"/>
+                                            <constraint firstItem="REr-nD-hqU" firstAttribute="top" secondItem="Bkq-Kt-VMO" secondAttribute="top" id="lLS-X0-EEi"/>
+                                            <constraint firstAttribute="height" constant="64" id="oIs-gb-36F"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qs8-X3-unx">
+                                        <rect key="frame" x="0.0" y="72" width="311" height="77"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6LJ-Gm-mZQ">
+                                                <rect key="frame" x="64" y="0.0" width="247" height="60"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D1a-lS-WwH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="247" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Package 3 Giga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ek-5u-FcE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2.33€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-Dh-tQY">
+                                                                <rect key="frame" x="135.5" y="0.0" width="111.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="AUV-Nb-kox"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zbe-Lh-69M">
+                                                        <rect key="frame" x="0.0" y="32" width="247" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Package 3 Giga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1F-ec-ivm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4z-cq-D7B">
+                                                                <rect key="frame" x="135.5" y="0.0" width="111.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ma-HW-NTS">
+                                                <rect key="frame" x="0.0" y="76" width="311" height="1"/>
+                                                <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="VAc-VS-b6T"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2Ma-HW-NTS" firstAttribute="leading" secondItem="Qs8-X3-unx" secondAttribute="leading" id="16K-GJ-t9i"/>
+                                            <constraint firstItem="2Ma-HW-NTS" firstAttribute="top" secondItem="6LJ-Gm-mZQ" secondAttribute="bottom" constant="16" id="34V-BI-rAC"/>
+                                            <constraint firstItem="6LJ-Gm-mZQ" firstAttribute="top" secondItem="Qs8-X3-unx" secondAttribute="top" id="4a0-pP-wYf"/>
+                                            <constraint firstAttribute="bottom" secondItem="2Ma-HW-NTS" secondAttribute="bottom" id="Edr-61-88o"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Ma-HW-NTS" secondAttribute="trailing" id="McP-x6-8oR"/>
+                                            <constraint firstAttribute="trailing" secondItem="6LJ-Gm-mZQ" secondAttribute="trailing" id="kUe-5y-U1F"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCd-iI-4P9">
+                                        <rect key="frame" x="0.0" y="157" width="311" height="109"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0M8-rI-J9U">
+                                                <rect key="frame" x="48" y="0.0" width="263" height="92"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Gh-5d-DED">
+                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="28"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUE-Wn-3bf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="28"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jWC-KM-o1D">
+                                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="24" id="wRA-Ka-zoj"/>
+                                                                            <constraint firstAttribute="height" constant="24" id="wrC-Bv-TjD"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="jWC-KM-o1D" firstAttribute="centerY" secondItem="KUE-Wn-3bf" secondAttribute="centerY" id="1z7-BF-KiF"/>
+                                                                    <constraint firstAttribute="width" constant="24" id="egZ-Px-hja"/>
+                                                                    <constraint firstItem="jWC-KM-o1D" firstAttribute="centerX" secondItem="KUE-Wn-3bf" secondAttribute="centerX" id="skc-Mk-Kpf"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadband" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC6-U5-8ld">
+                                                                <rect key="frame" x="34" y="0.0" width="229" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="ME7-2X-OZD"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nuz-BQ-Fik">
+                                                        <rect key="frame" x="0.0" y="32" width="263" height="28"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syb-js-nXR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="28"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-VI-AZo">
+                                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="24" id="Q3D-ex-33D"/>
+                                                                            <constraint firstAttribute="height" constant="24" id="cQ8-t9-Wg2"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="aHD-VI-AZo" firstAttribute="centerX" secondItem="Syb-js-nXR" secondAttribute="centerX" id="DUH-2D-Dui"/>
+                                                                    <constraint firstItem="aHD-VI-AZo" firstAttribute="centerY" secondItem="Syb-js-nXR" secondAttribute="centerY" id="Iad-m4-hJP"/>
+                                                                    <constraint firstAttribute="width" constant="24" id="tD3-yV-Bw2"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dme-1B-Qaj">
+                                                                <rect key="frame" x="34" y="0.0" width="229" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XqE-NY-bTX">
+                                                        <rect key="frame" x="0.0" y="64" width="263" height="28"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vR-en-gPZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="28"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="86V-Lc-4BC">
+                                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="24" id="Ccl-xE-Ois"/>
+                                                                            <constraint firstAttribute="width" constant="24" id="L11-gr-1Ru"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="86V-Lc-4BC" firstAttribute="centerX" secondItem="5vR-en-gPZ" secondAttribute="centerX" id="4cB-Bm-FF2"/>
+                                                                    <constraint firstItem="86V-Lc-4BC" firstAttribute="centerY" secondItem="5vR-en-gPZ" secondAttribute="centerY" id="R2s-ja-U4x"/>
+                                                                    <constraint firstAttribute="width" constant="24" id="kxV-ca-xdy"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-k2-nzI">
+                                                                <rect key="frame" x="34" y="0.0" width="229" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-d2-mFc">
+                                                <rect key="frame" x="0.0" y="108" width="311" height="1"/>
+                                                <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="xer-dy-Izz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0M8-rI-J9U" secondAttribute="trailing" id="34d-5c-lqr"/>
+                                            <constraint firstItem="Ztu-d2-mFc" firstAttribute="top" secondItem="0M8-rI-J9U" secondAttribute="bottom" constant="16" id="5HX-p8-AQb"/>
+                                            <constraint firstItem="Ztu-d2-mFc" firstAttribute="leading" secondItem="bCd-iI-4P9" secondAttribute="leading" id="9dN-2w-c5d"/>
+                                            <constraint firstItem="0M8-rI-J9U" firstAttribute="top" secondItem="bCd-iI-4P9" secondAttribute="top" id="RR8-sN-cuf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ztu-d2-mFc" secondAttribute="trailing" id="Xbl-cz-zEX"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ztu-d2-mFc" secondAttribute="bottom" id="n3c-C1-194"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQ2-D0-Tyn">
+                                        <rect key="frame" x="0.0" y="274" width="311" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tll-Nu-jJa">
+                                                <rect key="frame" x="48" y="0.0" width="263" height="60"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Ab-1f-Sqz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total before VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-co-k02" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="20€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBq-6y-vmb" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="110" y="0.0" width="153" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="wck-b4-H0c"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KEI-BB-2jb">
+                                                        <rect key="frame" x="0.0" y="32" width="263" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfR-Xa-mZw" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3.55€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBY-VA-a2v" customClass="VFGLabel" customModule="VFGFoundation">
+                                                                <rect key="frame" x="32.5" y="0.0" width="230.5" height="28"/>
+                                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tll-Nu-jJa" secondAttribute="trailing" id="GEf-lz-eNp"/>
+                                            <constraint firstItem="tll-Nu-jJa" firstAttribute="top" secondItem="YQ2-D0-Tyn" secondAttribute="top" id="K5S-3k-PlW"/>
+                                            <constraint firstAttribute="bottom" secondItem="tll-Nu-jJa" secondAttribute="bottom" id="sZT-nK-N3U"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tll-Nu-jJa" firstAttribute="leading" secondItem="REr-nD-hqU" secondAttribute="leading" id="BiH-ru-VMs"/>
+                                    <constraint firstAttribute="bottom" secondItem="YQ2-D0-Tyn" secondAttribute="bottom" id="UzY-Gq-vZB"/>
+                                    <constraint firstItem="6LJ-Gm-mZQ" firstAttribute="leading" secondItem="REr-nD-hqU" secondAttribute="leading" constant="16" id="Y2N-eQ-Pnx"/>
+                                    <constraint firstItem="0M8-rI-J9U" firstAttribute="leading" secondItem="REr-nD-hqU" secondAttribute="leading" id="cBd-Xt-D9E"/>
+                                    <constraint firstItem="YQ2-D0-Tyn" firstAttribute="leading" secondItem="lvM-IH-SJA" secondAttribute="leading" id="rfc-Gc-aP8"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a03-nA-5q2">
+                                <rect key="frame" x="0.0" y="434" width="343" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-4G-XLz">
+                                        <rect key="frame" x="16" y="0.0" width="311" height="1"/>
+                                        <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="t7Y-Oc-kd9"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok3-Se-DuF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                        <state key="normal" title="Show more">
+                                            <color key="titleColor" name="VFGRedOrangeText"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showMoreButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Njd-Sd-FFi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ok3-Se-DuF" secondAttribute="bottom" id="PyK-JM-hVc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ok3-Se-DuF" secondAttribute="trailing" id="Uv4-2m-chu"/>
+                                    <constraint firstItem="iAA-4G-XLz" firstAttribute="top" secondItem="a03-nA-5q2" secondAttribute="top" id="ctX-uV-704"/>
+                                    <constraint firstAttribute="height" constant="55" id="dSa-jl-IYa"/>
+                                    <constraint firstItem="Ok3-Se-DuF" firstAttribute="top" secondItem="a03-nA-5q2" secondAttribute="top" id="gx6-Hn-CTp"/>
+                                    <constraint firstItem="iAA-4G-XLz" firstAttribute="leading" secondItem="a03-nA-5q2" secondAttribute="leading" constant="16" id="mn4-Hi-F0g"/>
+                                    <constraint firstItem="Ok3-Se-DuF" firstAttribute="leading" secondItem="a03-nA-5q2" secondAttribute="leading" id="nxw-72-aas"/>
+                                    <constraint firstAttribute="trailing" secondItem="iAA-4G-XLz" secondAttribute="trailing" constant="16" id="xMC-RU-TRa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lvM-IH-SJA" secondAttribute="trailing" constant="16" id="4Gb-s5-s9E"/>
+                            <constraint firstItem="REr-nD-hqU" firstAttribute="leading" secondItem="QOt-bt-fLt" secondAttribute="leading" id="8U3-Eg-oKD"/>
+                            <constraint firstItem="lvM-IH-SJA" firstAttribute="leading" secondItem="fwg-fG-HjO" secondAttribute="leading" constant="16" id="C31-Wz-iLi"/>
+                            <constraint firstAttribute="trailing" secondItem="a03-nA-5q2" secondAttribute="trailing" id="NJG-D7-6nz"/>
+                            <constraint firstItem="Wxt-ec-WqP" firstAttribute="leading" secondItem="fwg-fG-HjO" secondAttribute="leading" id="OJ8-zu-FLg"/>
+                            <constraint firstItem="lvM-IH-SJA" firstAttribute="top" secondItem="Wxt-ec-WqP" secondAttribute="bottom" constant="16" id="UEP-Tn-FGB"/>
+                            <constraint firstItem="a03-nA-5q2" firstAttribute="top" secondItem="lvM-IH-SJA" secondAttribute="bottom" constant="8" id="YZi-qT-ra4"/>
+                            <constraint firstAttribute="bottom" secondItem="a03-nA-5q2" secondAttribute="bottom" id="c1f-bj-H34"/>
+                            <constraint firstItem="a03-nA-5q2" firstAttribute="leading" secondItem="fwg-fG-HjO" secondAttribute="leading" id="fjh-Ds-Xxl"/>
+                            <constraint firstAttribute="trailing" secondItem="Wxt-ec-WqP" secondAttribute="trailing" id="lch-vk-Wam"/>
+                            <constraint firstItem="Wxt-ec-WqP" firstAttribute="top" secondItem="fwg-fG-HjO" secondAttribute="top" id="vfw-qe-3nn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="fwg-fG-HjO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ljr-yh-FXM"/>
+                    <constraint firstItem="fwg-fG-HjO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qod-2X-yBq"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fwg-fG-HjO" secondAttribute="bottom" constant="16" id="ZGs-nR-lbi"/>
+                    <constraint firstAttribute="trailing" secondItem="fwg-fG-HjO" secondAttribute="trailing" constant="16" id="twa-uU-6hM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonShowMore" destination="Ok3-Se-DuF" id="zPG-06-x6K"/>
+                <outlet property="imageViewBillItem" destination="2CA-D0-NTR" id="IFY-Ov-SLa"/>
+                <outlet property="labelBillItemSubtitle" destination="Sqz-Xw-1W8" id="9rf-fw-Ukv"/>
+                <outlet property="labelBillItemTitle" destination="8p2-U1-Exm" id="NEQ-ww-bR5"/>
+                <outlet property="labelOutOfService" destination="85e-Ui-lGM" id="lom-M8-eXA"/>
+                <outlet property="labelOutOfServiceValue" destination="Xcv-Zk-u32" id="T78-66-Pp6"/>
+                <outlet property="labelTotal" destination="WpE-Vv-jDB" id="twj-ZC-DH5"/>
+                <outlet property="labelTotalBeforeVAT" destination="Cp6-co-k02" id="dp5-GZ-Vq9"/>
+                <outlet property="labelTotalBeforeVATValue" destination="GBq-6y-vmb" id="zgg-JV-v3q"/>
+                <outlet property="labelTotalValue" destination="FfZ-xj-wQQ" id="klV-AL-S6y"/>
+                <outlet property="labelVAT" destination="mfR-Xa-mZw" id="UpX-Bi-ma3"/>
+                <outlet property="labelVATValue" destination="xBY-VA-a2v" id="LDE-Am-Zsz"/>
+                <outlet property="stackViewContainer" destination="lvM-IH-SJA" id="xTF-30-lcq"/>
+                <outlet property="stackViewOutOfService" destination="6LJ-Gm-mZQ" id="QU6-MU-2wL"/>
+                <outlet property="stackViewProduct" destination="0M8-rI-J9U" id="xcp-Ut-kDm"/>
+                <outlet property="viewContainer" destination="fwg-fG-HjO" id="yf7-jK-yB4"/>
+                <outlet property="viewOutOfServiceCostList" destination="Qs8-X3-unx" id="Q7X-DI-glM"/>
+                <outlet property="viewProductList" destination="bCd-iI-4P9" id="pwO-vE-k8N"/>
+                <outlet property="viewVAT" destination="YQ2-D0-Tyn" id="dzc-36-SAH"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="33.147321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGRedOrangeText">
+            <color red="0.90200001001358032" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

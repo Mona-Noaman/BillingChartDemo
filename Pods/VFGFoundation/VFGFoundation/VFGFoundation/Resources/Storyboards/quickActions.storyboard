@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Quick Actions View Controller-->
+        <scene sceneID="Jah-Sa-mUo">
+            <objects>
+                <viewController storyboardIdentifier="VFQuickActionsViewController" modalPresentationStyle="overCurrentContext" id="qb5-bR-CrP" customClass="VFQuickActionsViewController" customModule="VFGFoundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GK5-7d-4R5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayn-U4-DgO">
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey3-2X-llp">
+                                        <rect key="frame" x="373" y="32" width="24" height="24"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="quickActionCloseIcon"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="EWf-Z0-563"/>
+                                            <constraint firstAttribute="height" constant="24" id="J2u-1b-XIn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="icCloseWhite"/>
+                                        <connections>
+                                            <action selector="dismissViewController:" destination="qb5-bR-CrP" eventType="touchUpInside" id="ECi-8p-xB2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L92-Vu-7G3">
+                                        <rect key="frame" x="16" y="34" width="349" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="quickActionMainTitle"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiF-Xh-smb">
+                                        <rect key="frame" x="16" y="75" width="382" height="634"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="quickActionMainView"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZiF-Xh-smb" secondAttribute="trailing" constant="16" id="27H-pt-AxN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ey3-2X-llp" secondAttribute="trailing" constant="17" id="2pZ-jv-uvk"/>
+                                    <constraint firstItem="L92-Vu-7G3" firstAttribute="centerY" secondItem="Ey3-2X-llp" secondAttribute="centerY" id="8VA-UZ-yQm"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="ZiF-Xh-smb" secondAttribute="bottom" id="CkK-5a-huq"/>
+                                    <constraint firstItem="ZiF-Xh-smb" firstAttribute="leading" secondItem="ayn-U4-DgO" secondAttribute="leading" constant="16" id="JeZ-eE-xly"/>
+                                    <constraint firstItem="Ey3-2X-llp" firstAttribute="top" secondItem="ayn-U4-DgO" secondAttribute="top" constant="32" id="hXq-R1-nAc"/>
+                                    <constraint firstItem="Ey3-2X-llp" firstAttribute="leading" secondItem="L92-Vu-7G3" secondAttribute="trailing" constant="8" id="hsr-6W-L8T"/>
+                                    <constraint firstItem="ZiF-Xh-smb" firstAttribute="top" secondItem="L92-Vu-7G3" secondAttribute="bottom" constant="21" id="oVT-LZ-Jjl"/>
+                                    <constraint firstItem="L92-Vu-7G3" firstAttribute="leading" secondItem="ayn-U4-DgO" secondAttribute="leading" constant="16" id="smK-ow-cfj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-Oy-Sod">
+                                <rect key="frame" x="187" y="166" width="40" height="5"/>
+                                <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="YiX-3j-EPp"/>
+                                    <constraint firstAttribute="height" constant="5" id="zWL-HW-ddu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ3-RB-uOl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissViewController:" destination="qb5-bR-CrP" eventType="touchUpInside" id="dfU-3q-Ycy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.69913848458904104" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w8I-1k-CuT" firstAttribute="trailing" secondItem="zQ3-RB-uOl" secondAttribute="trailing" id="4fR-Ug-bdg"/>
+                            <constraint firstItem="4tP-Oy-Sod" firstAttribute="centerX" secondItem="ayn-U4-DgO" secondAttribute="centerX" id="IaO-DA-N03"/>
+                            <constraint firstItem="ayn-U4-DgO" firstAttribute="top" secondItem="4tP-Oy-Sod" secondAttribute="bottom" constant="8" id="ThU-2j-DKd"/>
+                            <constraint firstItem="zQ3-RB-uOl" firstAttribute="top" secondItem="GK5-7d-4R5" secondAttribute="top" id="Vw1-5f-1hb"/>
+                            <constraint firstItem="ayn-U4-DgO" firstAttribute="top" secondItem="zQ3-RB-uOl" secondAttribute="bottom" id="dZf-9E-FS2"/>
+                            <constraint firstItem="w8I-1k-CuT" firstAttribute="trailing" secondItem="ayn-U4-DgO" secondAttribute="trailing" id="djP-py-wuf"/>
+                            <constraint firstItem="ayn-U4-DgO" firstAttribute="height" secondItem="GK5-7d-4R5" secondAttribute="height" multiplier="8:10" id="f9Y-9S-Twu"/>
+                            <constraint firstItem="ayn-U4-DgO" firstAttribute="leading" secondItem="w8I-1k-CuT" secondAttribute="leading" id="ijm-5j-25M"/>
+                            <constraint firstAttribute="bottom" secondItem="ayn-U4-DgO" secondAttribute="bottom" id="v69-e6-1EK"/>
+                            <constraint firstItem="zQ3-RB-uOl" firstAttribute="leading" secondItem="w8I-1k-CuT" secondAttribute="leading" id="zg0-DK-CZl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w8I-1k-CuT"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="Ey3-2X-llp" id="ngK-71-8To"/>
+                        <outlet property="originalProportionalHeightConstraint" destination="f9Y-9S-Twu" id="LvG-ix-JCb"/>
+                        <outlet property="pillView" destination="4tP-Oy-Sod" id="VmO-Dm-LY5"/>
+                        <outlet property="quickActionsView" destination="ayn-U4-DgO" id="5sv-5h-ogo"/>
+                        <outlet property="scrollView" destination="ZiF-Xh-smb" id="ehs-5O-ZPq"/>
+                        <outlet property="scrollViewLeadingConstraint" destination="JeZ-eE-xly" id="oFo-N2-I7N"/>
+                        <outlet property="scrollViewTrailingConstraint" destination="27H-pt-AxN" id="V9w-PF-0XE"/>
+                        <outlet property="titleLabel" destination="L92-Vu-7G3" id="lzx-sJ-HnG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOa-2R-5Vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icCloseWhite" width="24" height="24"/>
+    </resources>
+</document>
